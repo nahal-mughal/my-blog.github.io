@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Coder's Snippets | Home</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coder's Snippets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Explore more
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Get started!</a></li>
+                            <li><a class="dropdown-item" href="#">Languages</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Connect with us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-3" type="search" placeholder="Search snippets..." aria-label="Search">
+                    <button class="btn btn-outline-primary me-3" type="submit">Search </button>
+                    <button class="btn btn-warning me-3" type="button" data-bs-toggle="modal"
+                        data-bs-target="#login">Login </button>
+                    <button class="btn btn-warning me-3" type="button" type="button" data-bs-toggle="modal"
+                        data-bs-target="#signup">Signup </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput"
+                            placeholder="example@yahoo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="formGroupExampleInput2"
+                            placeholder="*** *** ***">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput3" class="form-label">Re-enter Password</label>
+                        <input type="password" class="form-control" id="formGroupExampleInput3"
+                            placeholder="*** *** ***">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal2  -->
+    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="formGroupExampleInput"
+                            placeholder="example@yahoo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="formGroupExampleInput2"
+                            placeholder="*** *** ***">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-warning">Signin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/crousal3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome Coder!</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/crousal2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Get to know us</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/crousal1.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Intract with our team</h2>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container d-flex flex-wrap">
+        <div class="card my-5 me-5" style="width: 20rem;">
+            <img src="images/card1.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Share your ideas</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ab esse officia, qui
+                    tempora quis?</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="card my-5 me-5" style="width: 20rem;">
+            <img src="images/card2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Build your team</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dignissimos, maiores
+                    debitis repudiandae dolores incidunt distinctio sint ipsum. Nesciunt, expedita.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="card my-5" style="width: 20rem;">
+            <img src="images/card3.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Develop in peace</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa reprehenderit sit
+                    velit?</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="card my-5 me-5" style="width: 20rem;">
+            <img src="images/card4.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Get the best of us</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, dicta. Optio
+                    aliquam maxime illo iste facere, architecto veritatis magnam tenetur error sapiente?</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="card my-5 me-5" style="width: 20rem;">
+            <img src="images/card5.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Design and manage</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur perferendis
+                    natus ex corrupti in aperiam molestias aliquid beatae, porro facilis.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+        <div class="card my-5" style="width: 20rem;">
+            <img src="images/card6.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Invite friends!</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam omnis sit? Id
+                    voluptatibus ipsam, labore amet dicta dignissimos quas dolorem blanditiis molestiae tempora placeat.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 Company, Inc. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
